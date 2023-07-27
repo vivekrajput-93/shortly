@@ -1,0 +1,94 @@
+:root {
+
+--Cyan: hsl(180, 66%, 49%);
+--Dark-Violet: hsl(257, 27%, 26%);
+
+
+--Red: hsl(0, 87%, 67%);
+
+
+--Gray: hsl(0, 0%, 75%);
+--Grayish-Violet: hsl(257, 7%, 63%);
+--Very-Dark-Blue: hsl(255, 11%, 22%);
+--Very-Dark-Violet: hsl(260, 8%, 14%);
+
+
+
+}
+
+
+
+
+
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.header img {
+    position: relative;
+    top: 2rem;
+    left: 7rem;
+}
+
+nav ul {
+    margin-left: 9rem;
+    margin-bottom: 3rem;
+}
+
+
+ .navbar {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 2rem;
+    cursor: pointer;
+    color: var(--Grayish-Violet);
+    font-weight: 900;
+}
+
+
+.navbar li {
+    margin: 2rem;
+}
+
+
+.sign {
+    margin-left: auto;
+    display: flex;
+    margin-right: 2rem;
+    margin-top: 2rem;
+}
+
+.sign li {
+    margin-left: 1rem;
+    
+}
+
+.sign .btn-one {
+    border: none;
+    background-color: white;
+    font-weight: 900;
+    color: var(--Grayish-Violet);
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+
+.sign .btn-two {
+    padding: .5rem 1rem .5rem;
+    background-color: var(--Cyan);
+    font-weight: 900;
+    color: var(--Grayish-Violet);
+    border: none;
+    border-radius: 20px;
+    margin-top: .5rem;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    bottom: .8rem;
+    font-size: 1rem;
+}

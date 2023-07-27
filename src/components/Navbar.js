@@ -1,28 +1,26 @@
 import React from "react";
+import logo from "../images/logo.svg";
+import "../CSS/Navbar.css";
 
 const Navbar = () => {
   return (
     <>
       <div className="header">
         <div>
-          <h1>Shortly</h1>
-          <ul>
-            <li>
-              <a href="#">Features</a>
-            </li>
-            <li>
-              <a href="#">Pricing</a>
-            </li>
-            <li>
-              <a href="#">Resources</a>
-            </li>
-          </ul>
-          <div className="btn-group">
-            <button>Login</button>
-            <button>Sign up</button>
-          </div>
-          <div className="ham"></div>
+          <img src={logo} alt="logo" />
         </div>
+        <nav >
+          <ul className="navbar">
+            <li><a>Features</a></li>
+            <li><a>Pricing</a></li>
+            <li><a>Resources</a></li>
+          </ul>
+        </nav>
+
+        <ul className="sign">
+          <li><button className="btn-one">Login</button></li>
+          <li><button className="btn-two">Sign Up</button></li>
+        </ul>
       </div>
     </>
   );
