@@ -1,0 +1,165 @@
+:root {
+    --Cyan: hsl(180, 66%, 49%);
+    --Dark-Violet: hsl(257, 27%, 26%);
+    --Red: hsl(0, 87%, 67%);
+    --Gray: hsl(0, 0%, 75%);
+    --Grayish-Violet: hsl(257, 7%, 63%);
+    --Very-Dark-Blue: hsl(255, 11%, 22%);
+    --Very-Dark-Violet: hsl(260, 8%, 14%);
+  }
+  
+  .advance { 
+    background-color: #f0f1f6;
+    display: flex;
+    flex-direction: column;
+  }
+  
+.advance h1 {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 2.5rem;
+}
+
+.advance .para {
+    text-align: center;
+    width: 38%;
+    position: relative;
+    left: 25rem;
+    color: var(--Grayish-Violet);
+}
+
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 2rem;
+    grid-gap: 2rem;
+    margin-bottom: 9rem;
+    position: relative;
+  }
+  
+  .cards::before {
+    content: '';
+    width: 60%;
+    height: 10px;
+    background-color: var(--Cyan);
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .card {
+    background-color: white;
+    width: 100%;
+    height: 50vh;
+    border-radius: 10px;
+    margin-top: 4rem;
+    position: relative; /* Add relative positioning to the card */
+  }
+  
+  .card p {
+    width: 80%;
+    font-size: 0.9rem;
+    position: relative;
+    left: 0rem;
+    margin-left: 2rem;
+    margin-top: 0;
+    color: var(--Grayish-Violet);
+  }
+  
+  .card h3 {
+    padding-bottom: 0;
+    margin-left: 2rem;
+  }
+  
+  .card .img {
+    width: 80px;
+    height: 80px;
+    background-color: var(--Dark-Violet);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 2rem;
+    left: 2rem;
+  }
+
+  .cards .two {
+    position: relative;
+    top: 2rem
+  }
+
+
+  .cards .three {
+    position: relative;
+    top: 4rem
+  }
+  
+  hr {
+    width: 100%;
+    height: 10px;
+    background-color: var(--Cyan);
+    border: none;
+    margin: 0;
+    position: absolute;
+    bottom: -5rem; 
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  
+@media screen and (max-width: 980px) {
+     .advance .para {
+        position: relative;
+        left: 12rem;
+        width: 60%;
+        margin-bottom: 5rem;
+    }
+
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+
+    .card {
+        width: 80%;
+        display: block;
+        margin: auto;
+        height: 20rem;
+
+    }
+
+
+    .cards::before {
+        content: '';
+        width: 10px;
+        height: 60%;
+        background-color: var(--Cyan);
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .advance {
+        width: 100%;
+        margin: 0;
+    }
+
+    .advance .para {
+        position: relative;
+        left: 9rem;
+    }
+
+    .cards {
+        margin: 0;
+        margin-bottom: 6rem;
+    }
+}

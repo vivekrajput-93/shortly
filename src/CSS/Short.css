@@ -1,0 +1,131 @@
+:root {
+    --Cyan: hsl(180, 66%, 49%);
+    --Dark-Violet: hsl(257, 27%, 26%);
+    --Red: hsl(0, 87%, 67%);
+    --Gray: hsl(0, 0%, 75%);
+    --Grayish-Violet: hsl(257, 7%, 63%);
+    --Very-Dark-Blue: hsl(255, 11%, 22%);
+    --Very-Dark-Violet: hsl(260, 8%, 14%);
+  }
+
+
+
+
+.short {
+    padding: 3.5rem;
+    width: 80%;
+    margin: 3rem auto;
+    background-color: var(--Dark-Violet);
+    background-image: url("../images/bg-shorten-desktop.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+}
+
+.short input {
+    width: 70%;
+    padding: .5rem .5rem;
+    outline: none;
+    color: var(--Grayish-Violet);
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+
+.short button {
+    width: 20%;
+    padding: .8rem 0;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: var(--Cyan);
+    border-radius: 10px;
+}
+
+.copy {
+    background-color: var(--Dark-Violet);
+    display: flex;
+    padding: 3rem;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+}
+
+.copy p {
+    width: 80%;
+    position: relative;
+    top: 0rem;
+    left: -2rem;
+    background: white;
+    border: none;
+    padding: .8rem 1rem;
+    border-radius: 10px;
+    margin-left: 2rem;
+    cursor: auto;
+}
+
+.click {
+    margin-right: 2rem;
+    padding: .8rem 3rem;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--Cyan);
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.clear {
+    margin-right: 3rem;
+    padding: .8rem 3rem;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--Cyan);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 980px) {
+    .short {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .short input {
+        width: 90%;
+    }
+
+    .short button {
+        width: 90%;
+    }
+
+
+    .copy {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .click {
+        margin: .5rem;
+        width: 90%;
+    }
+
+    .clear {
+        width: 90%;
+        position: relative;
+        left: .5rem;
+    }
+
+    .copy .result {
+        width: 90%;
+        margin: .5rem;
+        left: 0rem;
+    }
+}
