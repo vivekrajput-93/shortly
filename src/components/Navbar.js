@@ -1,5 +1,7 @@
 import React from "react";
 import logo from "../images/logo.svg";
+import menuOpen from "../images/icon-menu.svg";
+import menuClose from "../images/icon-close-menu.svg";
 import "../CSS/Navbar.css";
 
 const Navbar = () => {
