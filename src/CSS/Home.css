@@ -100,5 +100,9 @@
         font-size: 1rem;
         width: 100%;
     }
+
+    .left .button {
+        width: 50%;
+    }
 }
 

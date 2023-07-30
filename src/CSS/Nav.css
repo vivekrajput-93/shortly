@@ -13,13 +13,11 @@
     --Very-Dark-Violet: hsl(260, 8%, 14%);
     
     
-    
 }
 
 .header {
     width: 100%;
     height: 90px;
-    border: 1px solid #eee;
     border: none;
     background: #fff;
     position: sticky;
@@ -27,14 +25,6 @@
     left: 0;
     z-index: 10;
 }
-
-
-.header img {
-    position: relative;
-    top: .5rem;
-    left: 7rem;
-}
-
 
 .header .container {
     display: flex;
@@ -44,26 +34,34 @@
     height: 100%;
 }
 
-.nav-menu {
-    display: flex;
-    margin-left: 12rem;
-    color: var(--Grayish-Violet);
+
+.log {
+    position: relative;
+    left: 4rem;
 }
 
+.nav-menu {
+    display: flex;
+    margin-left: 6rem;
+    justify-content: space-around;
+}
 
+.nav-menu li {
+    padding: 0 1rem;
+    
+}
+
+li {
+    list-style-type: none;
+}
 
 .nav-menu li a {
-    padding: 0 1rem;
     color: var(--Grayish-Violet);
     cursor: pointer;
 }
 
 .nav-menu li a:hover {
     color: var(--Cyan);
-}
-
-.nav-menu a {
-    color: var(--Grayish-Violet);
 }
 
 .sign {
@@ -73,35 +71,56 @@
     margin-top: 2rem;
 }
 
-.sign li {
+ li {
     margin-left: 1rem;
     
 }
 
-.sign .btn-one {
+ .btn-one {
     border: none;
     background-color: white;
     font-weight: 900;
     color: var(--Grayish-Violet);
     cursor: pointer;
     font-size: 1rem;
+    margin-top: 1rem;
+}
+
+#side1 {
+    position: relative;
+    right: 12rem;
+    margin-top: 1rem;
 }
 
 
+#side2 {
+    display: block;
+    position: relative;
+    right: 12.8rem;
+    margin-top: 1rem;
 
-.sign .btn-two {
+}
+
+#side3 {
+    position: relative;
+    right: 13.6rem;
+    margin-top: 1rem;
+}
+
+.btn-two {
     padding: .5rem 1rem .5rem;
     background-color: var(--Cyan);
     font-weight: 900;
     color: var(--Grayish-Violet);
     border: none;
     border-radius: 20px;
-    margin-top: .5rem;
     color: white;
     cursor: pointer;
     position: relative;
     bottom: .8rem;
     font-size: 1rem;
+    margin-top: .5rem;
+    top: 0;
 }
 
 
@@ -118,11 +137,10 @@
     cursor: pointer;
 }
 
-@media screen and (max-width:740px) {
+@media screen and (max-width:980px) {
     .hamburger {
         display: flex;
     }
-
 
     .nav-menu li{
         display: none;
@@ -139,19 +157,45 @@
         flex-direction: column;
         top: 100px;
         right:70px;
-        left: 30px;
+        left: 100px;
         width: 70%;
-        height: 50vh;
+        height: 65vh;
         transition: 0.6s;
         z-index: 2;
-        background: #fff;
-        border: 1px solid #eee;
+        background: var(--Dark-Violet);
+        border: none;
         display: flex;
         align-items: center;
         justify-content: start;
-    }
-    .active li{
-        padding: 15px;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 
+    .btn-two {
+        width: 200%;
+        position: relative;
+        right: 3rem;
+    }
+
+    .btn-one {
+        border: none;
+        background-color: var(--Dark-Violet);
+        color: white;
+    }
+
+
+    .active li{
+        padding: 15px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .active li:hover {
+        color: var(--Cyan);
+    }
+    
+    #side1, #side2, #side3 {
+        position: relative;
+        left: 0;
+    }
 }

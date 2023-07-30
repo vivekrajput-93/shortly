@@ -10,38 +10,36 @@ function Navbar() {
   const handleClick = () => setClick(!click);
 
   return (
-    
     <div className="header">
       <div className="container">
-        <div>
-          <img src={logo} alt="logo" />
-        </div>
+      <img src={logo} className="log"  alt="logo"/>
         <ul className={click ? "active" : "nav-menu"}>
-          <li>
+          <li id="side1">
             <a to="/" onClick={handleClick}>
               Features
             </a>
           </li>
-          <li>
-            <a to="/about" onClick={handleClick}>
+          <li id="side2">
+            <a  to="/about" onClick={handleClick}>
               Pricing
             </a>
           </li>
-          <li>
-            <a to="/coin" onClick={handleClick}>
+          <li id="side3">
+            <a  to="/coin" onClick={handleClick}>
               Resources
             </a>
           </li>
-        </ul>
-
-        <ul className="sign">
           <li>
+          
             <button className="btn-one">Login</button>
           </li>
           <li>
             <button className="btn-two">Sign Up</button>
-          </li>
+          
+        </li>
+
         </ul>
+
         <div className="hamburger" onClick={handleClick}>
           {click ? (
             <img src={menuClose} alt="close" />
