@@ -4,6 +4,7 @@ import desktop from "../images/illustration-working.svg"
 
 const Home = () => {
   return (
+    
     <div className='home'>
         <div className='left'>
             <h1>More than just shorter links</h1>

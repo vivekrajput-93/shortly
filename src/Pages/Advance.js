@@ -5,6 +5,7 @@ import record from "../images/icon-detailed-records.svg"
 import fully from "../images/icon-fully-customizable.svg";
 
 
+
 const Advance = () => {
   return (
     <div className='advance'>

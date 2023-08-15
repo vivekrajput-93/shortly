@@ -11,6 +11,7 @@
 
 
 
+
 .short {
     padding: 3.5rem;
     width: 80%;
@@ -50,8 +51,8 @@
 .copy {
     background-color: var(--Dark-Violet);
     display: flex;
-    padding: 3rem;
-    width: 70%;
+    padding: 3rem 5rem;
+    width: fit-content;
     margin: auto;
     margin-bottom: 2rem;
     border-radius: 10px;
@@ -92,20 +93,31 @@
     cursor: pointer;
 }
 
+.load {
+     margin-bottom: 3rem;
+     font-size: 30px;
+     color: var(--Cyan);
+}
+
 @media screen and (max-width: 980px) {
+
+
+
     .short {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .short input {
-        width: 90%;
+        width: 60%;
     }
 
-    .short button {
-        width: 90%;
-    }
+    .button {
+        margin-left: -5rem;
+        width: fit-content;
+        padding: 1rem 2rem;
 
+    }
 
     .copy {
         display: flex;
@@ -127,5 +139,37 @@
         width: 90%;
         margin: .5rem;
         left: 0rem;
+    }
+}
+
+@media screen and (max-width:376px) {
+
+
+    .short {
+        width: 100%;
+        display: flex;
+        padding-left: 10px;
+        padding-right: 5px;
+    }
+
+    .short input {
+        flex: 1;
+        width: 150%;
+        font-size: 1rem;
+        font-size: .8rem;
+    }
+
+    .short button {
+        width: 30%;
+        font-size: .8rem;
+    }
+
+    .result {
+        font-size: .8rem;
+    }
+
+    .copy {
+        width: 100%;
+        padding: 2rem 4rem;
     }
 }
